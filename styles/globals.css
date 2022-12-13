@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  box-sizing: border-box;
+  background-color: #f1f9f9;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Glober";
+  src: url("../public/fonts/Glober/Glober-Regular/Glober-Regular.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Glober";
+  src: url("../public/fonts/Glober/Glober-Regular/Glober-Regular.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Glober";
+  src: url("../public/fonts/Glober/Glober-Regular-Italic/Glober-RegularItalic.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Glober";
+  src: url("../public/fonts/Glober/Glober-Bold/Glober-Bold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Glober";
+  src: url("../public/fonts/Glober/Glober-Bold-Italic/Glober-BoldItalic.woff")
+    format("woff");
+  font-style: italic;
+}
