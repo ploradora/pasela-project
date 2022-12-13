@@ -1,9 +1,9 @@
-import styles from '../styles/Home.module.css'
+import Nav from "../components/nav/Nav";
 
 export default function Home() {
   return (
-    <div className='text-3xl text-green-600 p-2'>
-      Hello Geeks!
-    </div>
+    <section>
+      <Nav />
+    </section>
   )
 }
