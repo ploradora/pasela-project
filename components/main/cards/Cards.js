@@ -10,28 +10,28 @@ import { useEffect, useState } from "react";
 const Cards = () => {
   const [cardData, setCardData] = useState([
     {
-      id: 1,
+      id: 4,
       icon: faMusic,
       title: "New Releases",
       color1: "#F8BA0C",
       color2: "#EF9D88",
     },
     {
-      id: 2,
+      id: 3,
       icon: faIcons,
       title: "Playlists",
       color1: "#6576A0",
       color2: "#9AB9D6",
     },
     {
-      id: 3,
+      id: 1,
       icon: faRecordVinyl,
       title: "Music",
       color1: "#4BDFFF",
       color2: "#32C9A5",
     },
     {
-      id: 4,
+      id: 2,
       icon: faRadio,
       title: "Stories",
       color1: "#DC79FF",
@@ -53,10 +53,10 @@ const Cards = () => {
           className={`flex flex-col justify-between items-start w-72 h-32 mb-4 rounded-lg p-2.5 cursor-pointer`}
           onClick={() => setSelectCard(card.id)}
         >
-          <FontAwesomeIcon icon={card.icon} className="text-2xl text-black" />
+          <FontAwesomeIcon icon={card.icon} className="text-2xl text-dark-grey" />
           <div>
             <div className="text-l font-bold">{card.title}</div>
-            <p className="text-sm text-black">23 Tracks</p>
+            <p className="text-sm text-dark-grey">23 Tracks</p>
           </div>
         </div>
       ))}
