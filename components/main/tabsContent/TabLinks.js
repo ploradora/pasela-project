@@ -14,7 +14,9 @@ const TabLinks = (props) => {
         <button
           key={btn.id}
           onClick={() => console.log(btn.id)}
-          className="z-10 overflow-hidden relative text-center text-l font-bold py-4 px-12 rounded-t-lg transition duration-500 ease-out hover:ease-in after:absolute after:w-full after:h-full after:bg-white after:left-0 after:-bottom-16 after:rounded-t-lg after:-z-10 hover:after:bottom-0"
+          className="z-10 overflow-hidden relative text-center text-l font-bold py-4 px-12 rounded-t-lg after:absolute after:bg-white  after:h-full after:w-full after:top-0 after:left-0 after:-z-10
+          after:translate-y-full
+          after:transition-all hover:after:translate-y-0 hover:after:transition-all"
         >
           {btn.title}
         </button>
@@ -22,5 +24,4 @@ const TabLinks = (props) => {
     </div>
   );
 };
-
 export default TabLinks;

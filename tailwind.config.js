@@ -10,7 +10,7 @@ module.exports = {
       "blue-test": "#caeced",
       white: "white",
       black: "#3D3D3D",
-      grey: "#a3a3a3",
+      grey: "#A3A3A3",
       "dashboard-btn": "#6B7280",
       "dashboard-border": "#0000001A",
       transparent: "transparent",

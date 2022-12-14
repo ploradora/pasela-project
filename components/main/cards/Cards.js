@@ -13,25 +13,29 @@ const Cards = () => {
       id: 1,
       icon: faMusic,
       title: "New Releases",
-      color: "white",
+      color1: "#F8BA0C",
+      color2: "#EF9D88",
     },
     {
       id: 2,
       icon: faIcons,
       title: "Playlists",
-      color: "dashboard-btn",
+      color1: "#6576A0",
+      color2: "#9AB9D6",
     },
     {
       id: 3,
       icon: faRecordVinyl,
       title: "Music",
-      color: "main",
+      color1: "#4BDFFF",
+      color2: "#32C9A5",
     },
     {
       id: 4,
       icon: faRadio,
       title: "Stories",
-      color: "grey",
+      color1: "#DC79FF",
+      color2: "#EF9D88",
     },
   ]);
   const [selectCard, setSelectCard] = useState(null);
@@ -43,13 +47,16 @@ const Cards = () => {
       {cardData.map((card) => (
         <div
           key={card.id}
-          className={`flex flex-col justify-between items-start w-72 h-32 bg-${card.color} bg-white mb-4 rounded-lg p-2.5 cursor-pointer`}
+          style={{
+            background: `linear-gradient(200deg, ${card.color1}, ${card.color2})`,
+          }}
+          className={`flex flex-col justify-between items-start w-72 h-32 mb-4 rounded-lg p-2.5 cursor-pointer`}
           onClick={() => setSelectCard(card.id)}
         >
-          <FontAwesomeIcon icon={card.icon} className="text-2xl"/>
+          <FontAwesomeIcon icon={card.icon} className="text-2xl text-black" />
           <div>
             <div className="text-l font-bold">{card.title}</div>
-            <p className="text-sm">23 Tracks</p>
+            <p className="text-sm text-black">23 Tracks</p>
           </div>
         </div>
       ))}
