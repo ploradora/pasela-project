@@ -10,7 +10,7 @@ export default function Home() {
         <div>
           <Nav />
         </div>
-          <MainContent />
+        <MainContent />
       </div>
       <div></div>
     </section>

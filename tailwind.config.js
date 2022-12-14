@@ -5,19 +5,30 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'main': '#F1F9F9',
-      'blue': '#3291CF',
-      'white': 'white',
-      'black': '#3D3D3D',
-      'dashboard-btn': '#6B7280',
-      'dashboard-border': '#0000001A',
-      'transparent': 'transparent',
-      'grey-input': '#3D3D3D4D',
+      main: "#F1F9F9",
+      blue: "#3291CF",
+      "blue-test": "#caeced",
+      white: "white",
+      black: "#3D3D3D",
+      grey: "#a3a3a3",
+      "dashboard-btn": "#6B7280",
+      "dashboard-border": "#0000001A",
+      transparent: "transparent",
+      "grey-input": "#3D3D3D4D",
+      "temp-card-bg": "#c3c7c7",
+      // 'gradient-yellow-from': '#F8BA0C',
+      // 'gradient-yellow-to': '#EF9D88',
+      // 'gradient-grey-from': '#6576A0',
+      // 'gradient-grey-to': '#9AB9D6',
+      // 'gradient-green-from': '#4BDFFF',
+      // 'gradient-green-to': '#32C9A5',
+      // 'gradient-pink-from': '#DC79FF',
+      // 'gradient-pink-to': '#EF9D88',
     },
     extend: {
       fontFamily: {
-        myfont: ['Glober'],
-        sans: ['Glober', 'sans-serif'],
+        myfont: ["Glober"],
+        sans: ["Glober", "sans-serif"],
       },
     },
   },
@@ -25,5 +36,4 @@ module.exports = {
   corePlugins: {
     fontFamily: true,
   },
-}
-
+};
