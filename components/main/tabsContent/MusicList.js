@@ -34,11 +34,11 @@ const MusicList = (props) => {
     { id: "29", title: "Emotions" },
   ];
   return (
-      <div>
+      <div className="pr-3">
         {DUMMY_MUSIC.map((song) => (
           <div
             key={song.id}
-            className="flex items-center justify-between mb-2 text-dark"
+            className="flex items-center justify-between mb-2 text-dark last:mb-0"
           >
             <div className="flex items-center">
               <div className="grid place-items-center radius-lg w-14 h-14 rounded-lg bg-gradient-to-r from-silver to-skin mr-3 cursor-pointer hover:drop-shadow-md hover:brightness-110	transition-all">
@@ -46,10 +46,10 @@ const MusicList = (props) => {
               </div>
               <p className="font-bold">{song.title}</p>
             </div>
-            <div className="flex items-center justify-between">
-              <p>3:33</p>
-              <p>Positive Action</p>
-              <FontAwesomeIcon icon={faEllipsisVertical} />
+            <div className="flex items-center justify-between text-grey-200 text-sm font-bold">
+              <p className="mr-6">3:33</p>
+              <p className="mr-4">Positive Action</p>
+              <FontAwesomeIcon className="text-grey-300 text-xl" icon={faEllipsisVertical} />
             </div>
           </div>
         ))}
