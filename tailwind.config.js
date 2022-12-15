@@ -9,16 +9,19 @@ module.exports = {
       blue: "#3291CF",
       "blue-test": "#caeced",
       white: "white",
-      'white-hover-tab': '#0000004d',
-      'dark-grey': "#3D3D3D",
-      dark: '#3D3D3D',
+      "white-hover-tab": "#0000004d",
+      darker: "#2e2e2e",
+      dark: "#3D3D3D",
       grey: "#A3A3A3",
       "dashboard-btn": "#6B7280",
       "dashboard-border": "#0000001A",
       transparent: "transparent",
       "grey-input": "#3D3D3D4D",
       "temp-card-bg": "#c3c7c7",
+      silver: "#A1C4DD",
+      skin: "#EB603D",
     },
+
     extend: {
       fontFamily: {
         myfont: ["Glober"],
@@ -26,7 +29,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
   corePlugins: {
     fontFamily: true,
   },

@@ -1,10 +1,12 @@
 import Cards from "./cards/Cards";
-import ContentList from "./tabsContent/ContentList";
+import CurrentList from "./tabsContent/CurrentList";
 
 const MainContent = (prop) => {
   return (
-    <div className="flex items-start justify-between w-11/12 m-auto mt-14 h-full w-full">
-      <ContentList />
+    <div className="flex items-start justify-between w-11/12 m-auto mt-14 w-full h-[calc(100vh-180px)]">
+      <div className="w-full">
+        <CurrentList />
+      </div>
       <Cards />
     </div>
   );

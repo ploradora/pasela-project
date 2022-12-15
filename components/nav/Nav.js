@@ -17,7 +17,7 @@ const Nav = (props) => {
           />
           <span className="text-xs text-dashboard-btn font-bold">Dashboard</span>
         </button>
-        <h1 className="mx-6 not-italic font-bold  text-3xl leading-10 text-dark-grey">
+        <h1 className="mx-6 not-italic font-bold  text-3xl leading-10 text-dark">
           Audio
         </h1>
         <div className="relative">
@@ -38,7 +38,7 @@ const Nav = (props) => {
         </div>
       </div>
       <button className="bg-blue text-white pt-2 pb-2 pr-8 pl-6 rounded-lg shadow-md">
-        <FontAwesomeIcon icon={faPlus} className="pr-1.5 text-s" />{" "}
+        <FontAwesomeIcon icon={faPlus} className="pr-1.5 text-s" />
         <span>Create Playlist</span>
       </button>
     </nav>
