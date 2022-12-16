@@ -44,9 +44,9 @@ const Cards = () => {
   ];
   const [selectCard, setSelectCard] = useState(null);
 
-  useEffect(() => {
-    console.log(selectCard);
-  });
+  // useEffect(() => {
+  //   console.log(selectCard);
+  // });
 
   return (
     <div className="ml-4">

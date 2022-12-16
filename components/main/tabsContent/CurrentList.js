@@ -11,13 +11,12 @@ const CurrentList = (props) => {
   const [selectedTab, setSelectedTab] = useState("music");
 
   useEffect(() => {
-    console.log(ctx.currentTab, "from");
     setSelectedTab(ctx.currentTab);
   });
 
   return (
-    <div>
-      <div className="">
+    <div className="overflow-hidden">
+      <div>
         <TabLinks />
       </div>
       <div
@@ -29,20 +28,20 @@ const CurrentList = (props) => {
       >
         {ctx.currentTab === "music" && (
           <div>
-            <div className="flex items-center justify-between w-[calc(100%-16px)] h-10 px-6  bg-main rounded-lg text-sm">
+            <div className="flex items-center justify-between w-[calc(100%-16px)] h-10 px-6 overflow-hidden bg-main rounded-lg text-sm">
               <div className="flex items-center">
                 <span className="mr-8">#</span>
                 <p>Track Title</p>
               </div>
               <div className="flex items-center">
-                <p className="mr-24">Time</p>
-                <p>Artist</p>
+                <p className="mr-20">Time</p>
+                <p className="mr-4">Artist</p>
               </div>
             </div>
             <div className="h-2 w-full"></div>
           </div>
         )}
-        <div className={`${ctx.currentTab === "music" ? 'overflow-y-scroll h-[calc(100vh-310px)]' : 'h-[calc(100vh-246px)]'}`}>
+        <div className={`${ctx.currentTab === "music" ? 'overflow-y-scroll max-h-[calc(100vh-310px)]' : 'h-[calc(100vh-262px)]'}`}>
           {selectedTab === "music" && <MusicList />}
           {selectedTab === "releases" && <NewReleases />}
           {selectedTab === "playlists" && <Playlists />}
