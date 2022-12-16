@@ -1,14 +1,35 @@
-import CardContext from "../components/CardContext";
+import TabContext from "../components/tab-context";
 import Nav from "../components/nav/Nav";
 import SideLinks from "../components/SideLinks";
 import MainContent from "../components/main/MainContent";
 import { useState } from "react";
+import MusicList from "../components/main/tabsContent/MusicList";
+import StoriesList from "../components/main/tabsContent/StoriesList";
+import Playlists from "../components/main/tabsContent/Playlists";
+import NewReleases from "../components/main/tabsContent/NewReleases";
 
 export default function Home() {
   const [currentTab, setCurrentTab] = useState("music");
+  const musicComponent = <MusicList />;
+  const storiesComponent = <StoriesList />;
+  const playlistsComponent = <Playlists />;
+  const releasesComponent = <NewReleases />;
 
   return (
-    <CardContext.Provider value={{ currentTab, setCurrentTab }}>
+    <TabContext.Provider
+      value={{
+        currentTab,
+        setCurrentTab,
+        musicTab: "music",
+        storiesTab: "stories",
+        playlistsTab: "playlists",
+        releasesTab: "releases",
+        musicComponent,
+        storiesComponent,
+        releasesComponent,
+        playlistsComponent,
+      }}
+    >
       <section className="flex items-start">
         <SideLinks />
         <div className="w-full">
@@ -17,8 +38,7 @@ export default function Home() {
           </div>
           <MainContent />
         </div>
-        <div></div>
       </section>
-    </CardContext.Provider>
+    </TabContext.Provider>
   );
 }

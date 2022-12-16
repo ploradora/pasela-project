@@ -1,56 +1,11 @@
-import {
-  faMusic,
-  faRecordVinyl,
-  faIcons,
-  faRadio,
-} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import { MOCK_CARD } from "../MockData";
 
 const Cards = () => {
-  const cardData = [
-    {
-      id: 4,
-      icon: faMusic,
-      title: "New Releases",
-      val: "releases",
-      color1: "#F8BA0C",
-      color2: "#EF9D88",
-    },
-    {
-      id: 3,
-      icon: faIcons,
-      title: "Playlists",
-      val: "playlists",
-      color1: "#6576A0",
-      color2: "#9AB9D6",
-    },
-    {
-      id: 1,
-      icon: faRecordVinyl,
-      title: "Music",
-      val: "music",
-      color1: "#4BDFFF",
-      color2: "#32C9A5",
-    },
-    {
-      id: 2,
-      icon: faRadio,
-      title: "Stories",
-      val: "stories",
-      color1: "#DC79FF",
-      color2: "#EF9D88",
-    },
-  ];
-  const [selectCard, setSelectCard] = useState(null);
-
-  // useEffect(() => {
-  //   console.log(selectCard);
-  // });
 
   return (
     <div className="ml-4">
-      {cardData.map((card) => (
+      {MOCK_CARD.map((card) => (
         <div
           key={card.id}
           style={{
@@ -58,13 +13,10 @@ const Cards = () => {
           }}
           className={`flex flex-col justify-between items-start w-72 h-32 mb-4 rounded-lg p-2.5 cursor-pointer`}
           onClick={() => {
-            setSelectCard(card.val);
+            console.log(card.val);
           }}
         >
-          <FontAwesomeIcon
-            icon={card.icon}
-            className="text-2xl text-dark"
-          />
+          <FontAwesomeIcon icon={card.icon} className="text-2xl text-dark" />
           <div>
             <div className="text-l font-bold">{card.title}</div>
             <p className="text-sm text-dark">23 Tracks</p>

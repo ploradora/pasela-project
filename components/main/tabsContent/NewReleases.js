@@ -1,4 +1,4 @@
-const NewReleases = (props) => {
+const NewReleases = () => {
   return (
     <div>
       <h1>New Releases</h1>
