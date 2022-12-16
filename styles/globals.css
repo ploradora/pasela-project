@@ -15,21 +15,6 @@ body {
   padding: 0; 
 }
 
-*::-webkit-scrollbar {
-  width: 20px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 5px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #979B9B;
-  border-radius: 15px;
-  border: 7.5px solid #fff;
-}
-
 @font-face {
   font-family: "Glober";
   src: url("../public/fonts/Glober/Glober-Regular/Glober-Regular.woff")

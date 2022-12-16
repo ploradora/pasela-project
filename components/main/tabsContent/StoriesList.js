@@ -1,8 +1,10 @@
+import OverflowScrollStyling from "../OverflowScrollStyling";
+
 const StoriesList = () => {
   return (
-    <div>
+    <OverflowScrollStyling>
       <h1>Stories List</h1>
-    </div>
+    </OverflowScrollStyling>
   );
 };
 

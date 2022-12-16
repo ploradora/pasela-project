@@ -1,8 +1,10 @@
+import OverflowScrollStyling from "../OverflowScrollStyling";
+
 const Playlists = () => {
   return (
-    <div>
+    <OverflowScrollStyling>
       <h1>Playlists</h1>
-    </div>
+    </OverflowScrollStyling>
   );
 };
 

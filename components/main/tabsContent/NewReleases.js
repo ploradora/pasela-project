@@ -1,8 +1,10 @@
+import OverflowScrollStyling from "../OverflowScrollStyling";
+
 const NewReleases = () => {
   return (
-    <div>
+    <OverflowScrollStyling>
       <h1>New Releases</h1>
-    </div>
+    </OverflowScrollStyling>
   );
 };
 

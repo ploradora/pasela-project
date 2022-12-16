@@ -12,10 +12,11 @@ module.exports = {
       dark: "#3D3D3D",
       grey: "#A3A3A3",
       silver: "#A1C4DD",
-      skin: "#EB603D",
+      skin: "#EFD2BE",
       transparent: "transparent",
       "grey-200": "#9E9E9E",
       "grey-300": "#6B7280",
+      "grey-400": "#93989B",
       "white-hover-tab": "#0000004d",
       "dashboard-btn": "#6B7280",
       "dashboard-border": "#0000001A",
@@ -30,6 +31,9 @@ module.exports = {
     },
   },
   plugins: [require("tailwind-scrollbar")],
+  variants: {
+    scrollbar: ["rounded"],
+  },
   corePlugins: {
     fontFamily: true,
   },
