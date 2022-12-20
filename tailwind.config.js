@@ -7,6 +7,7 @@ module.exports = {
     colors: {
       main: "#F1F9F9",
       blue: "#3291CF",
+      'blue-100': '#adbcc4',
       white: "white",
       darker: "#2e2e2e",
       dark: "#3D3D3D",
@@ -14,6 +15,7 @@ module.exports = {
       silver: "#A1C4DD",
       skin: "#EFD2BE",
       transparent: "transparent",
+      "yellow-100": "#f5e5b5",
       "grey-200": "#9E9E9E",
       "grey-300": "#6B7280",
       "grey-400": "#93989B",
@@ -21,6 +23,8 @@ module.exports = {
       "dashboard-btn": "#6B7280",
       "dashboard-border": "#0000001A",
       "grey-input": "#3D3D3D4D",
+      "violet-500": "#A7BFE8",
+      "fuchsia-500": "#6190E8",
     },
 
     extend: {
