@@ -13,6 +13,7 @@ export default function Home() {
   const [currentTab, setCurrentTab] = useState("music");
   const [currentListData, setCurrentListData] = useState(MOCK_MUSIC);
   const [filterQuery, setFilterQuery] = useState("");
+  const [modalState, setModalState] = useState(false);
   const musicComponent = <MusicList />;
   const storiesComponent = <StoriesList />;
   const playlistsComponent = <Playlists />;
@@ -27,6 +28,8 @@ export default function Home() {
         setCurrentListData,
         filterQuery,
         setFilterQuery,
+        modalState,
+        setModalState,
         musicTab: "music",
         storiesTab: "stories",
         playlistsTab: "playlists",

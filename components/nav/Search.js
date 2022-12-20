@@ -13,6 +13,15 @@ const Search = (props) => {
     ctx.setFilterQuery(query);
   };
 
+  // if(ctx.currentTab === 'music') {
+  //   ctx.setFilterQuery(query);
+
+  // }
+  // if(ctx.currentTab === 'playlists') {
+  //   ctx.setFilterQuery(query);
+
+  // }
+
   return (
     <div className="relative">
       {!focused && (
@@ -30,7 +39,7 @@ const Search = (props) => {
         onBlur={() => {
           setFocused(false);
           setQuery("");
-          ctx.setFilterQuery('')
+          ctx.setFilterQuery("");
         }}
         type="text"
         className="w-32 h-8 py-3 px-3 border border-solid border-grey-input rounded-2xl bg-transparent text-dark-grey text-sm focus:outline-none focus:border-transparent focus:ring focus:ring-blue"

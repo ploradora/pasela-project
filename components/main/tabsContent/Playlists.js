@@ -8,7 +8,7 @@ const Playlists = () => {
 
   return (
     <OverflowScrollStyling>
-      <div className="grid grid-cols-3 gap-2 w-full h-full">
+      <div className="grid grid-card gap-2 w-full h-full">
         {MOCK_PLAYLIST
           .filter((playlist) => playlist.name.toLowerCase().includes(ctx.filterQuery.toLowerCase()))
           .map((playlist) => (
