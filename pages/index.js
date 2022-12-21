@@ -3,7 +3,7 @@ import Nav from "../components/nav/Nav";
 import SideLinks from "../components/SideLinks";
 import MainContent from "../components/main/MainContent";
 import { useState } from "react";
-import { MOCK_MUSIC } from "../components/main/MockData";
+import { MOCK_MUSIC } from "../components/main/mock-data";
 import MusicList from "../components/main/tabsContent/MusicList";
 import StoriesList from "../components/main/tabsContent/StoriesList";
 import Playlists from "../components/main/tabsContent/Playlists";
@@ -23,8 +23,8 @@ export default function Home() {
     <TabContext.Provider
       value={{
         currentTab,
-        currentListData,
         setCurrentTab,
+        currentListData,
         setCurrentListData,
         filterQuery,
         setFilterQuery,

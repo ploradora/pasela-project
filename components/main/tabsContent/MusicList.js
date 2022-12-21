@@ -1,13 +1,13 @@
 import { faPlay, faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useContext } from "react";
 import TabContext from "../../TabContext";
+import { useContext } from "react";
 import OverflowScrollStyling from "../OverflowScrollStyling";
-import { MOCK_MUSIC } from "../MockData";
+import { MOCK_MUSIC } from "../mock-data";
 
 const MusicList = () => {
   const ctx = useContext(TabContext);
-
+  
   return (
     <div>
       <div className="pr-2">
@@ -27,7 +27,9 @@ const MusicList = () => {
           </div>
         )}
       </div>
-      <OverflowScrollStyling>
+      <OverflowScrollStyling
+        stylingOnMusicTab={'h-[calc(100vh-310px)]'}
+      >
         <div className="pr-3">
           {MOCK_MUSIC.filter((song) =>
             song.title.toLowerCase().includes(ctx.filterQuery.toLowerCase())

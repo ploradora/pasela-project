@@ -1,7 +1,7 @@
 import OverflowScrollStyling from "../OverflowScrollStyling";
 import TabContext from "../../TabContext";
 import { useContext } from "react";
-import { MOCK_PLAYLIST } from "../MockData";
+import { MOCK_PLAYLIST } from "../mock-data";
 
 const Playlists = () => {
   const ctx = useContext(TabContext);
