@@ -13,7 +13,7 @@ const CurrentList = () => {
       </div>
       <div
         className={`${
-          ctx.currentTab === ctx.musicTab
+          ctx.currentTab === "music"
             ? ""
             : "rounded-tl-2xl delay-75 duration-700"
         } relative w-full pl-4 pb-4 pt-4 pr-2 bg-white rounded-tr-2xl rounded-bl-2xl rounded-br-2xl`}
@@ -24,10 +24,10 @@ const CurrentList = () => {
           {ctx.currentTab === ctx.playlistsTab && ctx.playlistsComponent}
           {ctx.currentTab === ctx.storiesTab && ctx.storiesComponent}
         </div> */}
-        {selectedContent.map((comp) => {
-          if (ctx.currentTab === comp.val) {
-            const Component = comp.component;
-            return <Component />;
+        {selectedContent.map((component) => {
+          if (ctx.currentTab === component.val) {
+            const Component = component.component;
+            return <Component list={component.mock} key={component.id} />;
           }
         })}
       </div>

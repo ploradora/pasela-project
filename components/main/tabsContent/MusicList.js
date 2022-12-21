@@ -5,13 +5,13 @@ import { useContext } from "react";
 import OverflowScrollStyling from "../OverflowScrollStyling";
 import { MOCK_MUSIC } from "../mock-data";
 
-const MusicList = () => {
+const MusicList = ({list}) => {
   const ctx = useContext(TabContext);
   
   return (
     <div>
       <div className="pr-2">
-        {ctx.currentTab === ctx.musicTab && (
+        {ctx.currentTab === 'music' && (
           <div>
             <div className="flex items-center justify-between h-10 px-6 overflow-hidden bg-main rounded-lg text-sm">
               <div className="flex items-center">
@@ -31,7 +31,7 @@ const MusicList = () => {
         stylingOnMusicTab={'max-h-[calc(100vh_-_310.1px)] min-h-[calc(100vh_-_310.1px)]'}
       >
         <div className="pr-3">
-          {MOCK_MUSIC.filter((song) =>
+          {list.filter((song) =>
             song.title.toLowerCase().includes(ctx.filterQuery.toLowerCase())
           ).map((song) => (
             <div

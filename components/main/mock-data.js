@@ -186,6 +186,7 @@ export const selectedContent = [
     title: "Music",
     val: "music",
     component: MusicList,
+    mock: MOCK_MUSIC,
   },
   {
     id: 2,
@@ -198,6 +199,7 @@ export const selectedContent = [
     title: "Playlist",
     val: "playlists",
     component: Playlists,
+    mock: MOCK_PLAYLIST,
   },
   {
     id: 4,
