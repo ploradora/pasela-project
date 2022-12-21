@@ -9,8 +9,8 @@ const Search = (props) => {
   const [query, setQuery] = useState("");
 
   const inputFilter = (e) => {
+    ctx.setFilterQuery(e.target.value);
     setQuery(e.target.value);
-    ctx.setFilterQuery(query);
   };
 
   // if(ctx.currentTab === 'music') {
