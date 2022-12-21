@@ -1,5 +1,6 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import TabContext from "../../TabContext";
+import { selectedContent } from "../mock-data";
 
 const TabLinks = () => {
   const ctx = useContext(TabContext);
@@ -10,11 +11,11 @@ const TabLinks = () => {
     { id: 3, title: "Playlist", val: ctx.playlistsTab },
     { id: 4, title: "New Releases", val: ctx.releasesTab },
   ];
-
+  
   return (
     <div>
       <div className="w-fit flex items-center justify-between">
-        {buttons.map((btn) => (
+        {selectedContent.map((btn) => (
           <button
             key={btn.id}
             onClick={() => ctx.setCurrentTab(btn.val)}

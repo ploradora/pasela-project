@@ -28,7 +28,7 @@ const MusicList = () => {
         )}
       </div>
       <OverflowScrollStyling
-        stylingOnMusicTab={'max-h-[calc(100vh_-_310px)] min-h-[calc(100vh_-_310px)]'}
+        stylingOnMusicTab={'max-h-[calc(100vh_-_310.1px)] min-h-[calc(100vh_-_310.1px)]'}
       >
         <div className="pr-3">
           {MOCK_MUSIC.filter((song) =>
