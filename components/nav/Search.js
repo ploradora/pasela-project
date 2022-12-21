@@ -9,8 +9,8 @@ const Search = (props) => {
   const [query, setQuery] = useState("");
 
   const inputFilter = (e) => {
+    ctx.setFilterQuery(e.target.value);
     setQuery(e.target.value);
-    ctx.setFilterQuery(query);
   };
 
   // if(ctx.currentTab === 'music') {
@@ -38,8 +38,8 @@ const Search = (props) => {
         }}
         onBlur={() => {
           setFocused(false);
-          setQuery("");
           ctx.setFilterQuery("");
+          setQuery("");
         }}
         type="text"
         className="w-32 h-8 py-3 px-3 border border-solid border-grey-input rounded-2xl bg-transparent text-dark-grey text-sm focus:outline-none focus:border-transparent focus:ring focus:ring-blue"
