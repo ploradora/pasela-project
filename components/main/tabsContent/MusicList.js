@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TabContext from "../../TabContext";
 import { useContext } from "react";
 import OverflowScrollStyling from "../OverflowScrollStyling";
-import { MOCK_MUSIC } from "../mock-data";
 
 const MusicList = ({list}) => {
   const ctx = useContext(TabContext);
