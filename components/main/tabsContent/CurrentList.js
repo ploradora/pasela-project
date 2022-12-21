@@ -24,7 +24,12 @@ const CurrentList = () => {
           {ctx.currentTab === ctx.playlistsTab && ctx.playlistsComponent}
           {ctx.currentTab === ctx.storiesTab && ctx.storiesComponent}
         </div> */}
-        {selectedContent.map(comp => console.log(comp.component))}
+        {selectedContent.map((comp) => {
+          if (ctx.currentTab === comp.val) {
+            const Component = comp.component;
+            return <Component />;
+          }
+        })}
       </div>
     </div>
   );

@@ -2,8 +2,6 @@ import MusicList from "./tabsContent/MusicList";
 import NewReleases from "./tabsContent/NewReleases";
 import StoriesList from "./tabsContent/StoriesList";
 import Playlists from "./tabsContent/Playlists";
-// import TabContext from "../TabContext";
-// import { useContext } from "react";
 
 import {
   faMusic,
@@ -186,25 +184,25 @@ export const selectedContent = [
   {
     id: 1,
     title: "Music",
-     val: ctx.musicTab,
+    val: "music",
     component: MusicList,
   },
   {
     id: 2,
     title: "Stories",
-    val: ctx.storiesTab,
+    val: "stories",
     component: StoriesList,
   },
   {
     id: 3,
     title: "Playlist",
-    val: ctx.playlistsTab,
-    component: NewReleases,
+    val: "playlists",
+    component: Playlists,
   },
   {
     id: 4,
     title: "New Releases",
-    val: ctx.releasesTab,
-    component: Playlists,
+    val: "releases",
+    component: NewReleases,
   },
 ];
