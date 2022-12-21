@@ -1,3 +1,8 @@
+import MusicList from "./tabsContent/MusicList";
+import NewReleases from "./tabsContent/NewReleases";
+import StoriesList from "./tabsContent/StoriesList";
+import TabLinks from "./tabsContent/TabLinks";
+
 import {
   faMusic,
   faIcons,
@@ -174,3 +179,7 @@ export const MOCK_PLAYLIST = [
   { id: 9, name: "Lava Lamp", tracks: 82 },
   { id: 10, name: "Nature Sounds", tracks: 66 },
 ];
+
+export const TAB_CONTENT = () => {
+  
+}
