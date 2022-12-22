@@ -1,18 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MOCK_CARD } from "../MockData";
 
-
-const Cards = ({id, icon, title, val, color1, color2}) => {
+const CardItem = () => {
   return (
-    
-  );
-};
-
-export default Cards;
-
-
-
-{/* <div className="ml-4">
+    <div className="ml-4">
       {MOCK_CARD.map((card) => (
         <div
           key={card.id}
@@ -31,4 +22,8 @@ export default Cards;
           </div>
         </div>
       ))}
-    </div> */}
+    </div>
+  );
+};
+
+export default CardItem;
