@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { MOCK_CARD } from "../MockData";
+import { MOCK_CARD } from "../mock-data";
 
 const Cards = () => {
-
   return (
     <div className="ml-4">
       {MOCK_CARD.map((card) => (
