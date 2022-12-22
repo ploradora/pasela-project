@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom";
 import TabContext from "../TabContext";
 import { useState, useContext } from "react";
-import { MOCK_PLAYLIST } from "../main/MockData";
+import { MOCK_PLAYLIST } from "../Main/MockData";
 
 const CreatePlaylist = (props) => {
   const ctx = useContext(TabContext);
