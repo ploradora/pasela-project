@@ -1,5 +1,5 @@
 import TabLinks from "./TabLinks";
-import TabContext from "../../tab-context";
+import TabContext from "../../TabContext";
 import { useContext } from "react";
 
 const CurrentList = () => {

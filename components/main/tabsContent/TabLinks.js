@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import TabContext from "../../tab-context";
+import TabContext from "../../TabContext";
 import { MOCK_MUSIC, MOCK_PLAYLIST } from "../MockData";
 
 const TabLinks = () => {

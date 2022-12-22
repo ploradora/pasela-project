@@ -1,5 +1,5 @@
 import React from "react";
-import TabContext from "../tab-context";
+import TabContext from "../TabContext";
 import { useContext } from "react";
 
 const OverflowScrollStyling = (props) => {

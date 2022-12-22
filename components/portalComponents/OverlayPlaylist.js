@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import TabContext from "../tab-context";
+import TabContext from "../TabContext";
 import { useContext } from "react";
 
 const OverlayPlaylist = () => {

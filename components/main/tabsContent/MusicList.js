@@ -1,7 +1,7 @@
 import { faPlay, faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
-import TabContext from "../../tab-context";
+import TabContext from "../../TabContext";
 import OverflowScrollStyling from "../OverflowScrollStyling";
 import { MOCK_MUSIC } from "../MockData";
 

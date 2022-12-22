@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import CreatePlaylist from "../portalComponents/CreatePlaylist";
 import OverlayPlaylist from "../portalComponents/OverlayPlaylist";
-import TabContext from "../tab-context";
+import TabContext from "../TabContext";
 import { useContext } from "react";
 
 import Search from "./Search";
