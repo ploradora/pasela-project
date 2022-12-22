@@ -1,5 +1,6 @@
 import Cards from "./cards/Cards";
 import CurrentList from "./tabsContent/CurrentList";
+import { MOCK_CARD } from "./MockData";
 
 const MainContent = (prop) => {
   return (
@@ -7,7 +8,7 @@ const MainContent = (prop) => {
       <div className="w-full">
         <CurrentList />
       </div>
-      <Cards />
+      <Cards cards={MOCK_CARD} />
     </div>
   );
 };
