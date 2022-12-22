@@ -4,13 +4,13 @@ import TabContext from "../../TabContext";
 import { useContext } from "react";
 import OverflowScrollStyling from "../OverflowScrollStyling";
 
-const MusicList = ({list}) => {
+const MusicList = ({list, currentTab}) => {
   const ctx = useContext(TabContext);
   
   return (
     <div>
       <div className="pr-2">
-        {ctx.currentTab === 'music' && (
+        {currentTab === ctx.currentTab && (
           <div>
             <div className="flex items-center justify-between h-10 px-6 overflow-hidden bg-main rounded-lg text-sm">
               <div className="flex items-center">

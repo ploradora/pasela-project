@@ -27,7 +27,7 @@ const CurrentList = () => {
         {selectedContent.map((component) => {
           if (ctx.currentTab === component.val) {
             const Component = component.component;
-            return <Component list={component.mock} key={component.id} />;
+            return <Component list={component.mock} currentTab={component.val} key={component.id} />;
           }
         })}
       </div>

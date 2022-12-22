@@ -10,8 +10,6 @@ const CreatePlaylist = (props) => {
   const [query, setQuery] = useState("");
   const [inputEmpty, setInputEmpty] = useState(false);
 
-  const playlists = MOCK_PLAYLIST;
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (query === "" || query === " ") {
@@ -25,7 +23,7 @@ const CreatePlaylist = (props) => {
       tracks: 0,
     };
 
-    playlists.push(newPlaylist);
+    MOCK_PLAYLIST.push(newPlaylist);
     ctx.setModalState(false);
   };
 
