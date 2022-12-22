@@ -1,6 +1,7 @@
 import TabLinks from "./TabLinks";
 import TabContext from "../../TabContext";
 import { useContext } from "react";
+import { selectedContent } from "../mock-data";
 
 const CurrentList = () => {
   const ctx = useContext(TabContext);
@@ -17,12 +18,18 @@ const CurrentList = () => {
             : "rounded-tl-2xl delay-75 duration-700"
         } relative w-full pl-4 pb-4 pt-4 pr-2 bg-white rounded-tr-2xl rounded-bl-2xl rounded-br-2xl`}
       >
-        <div>
+        {/* <div>
           {ctx.currentTab === ctx.musicTab && ctx.musicComponent}
           {ctx.currentTab === ctx.releasesTab && ctx.releasesComponent}
           {ctx.currentTab === ctx.playlistsTab && ctx.playlistsComponent}
           {ctx.currentTab === ctx.storiesTab && ctx.storiesComponent}
-        </div>
+        </div> */}
+        {selectedContent.map((comp) => {
+          if (ctx.currentTab === comp.val) {
+            const Component = comp.component;
+            return <Component />;
+          }
+        })}
       </div>
     </div>
   );

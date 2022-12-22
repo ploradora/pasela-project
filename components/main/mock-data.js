@@ -1,3 +1,8 @@
+import MusicList from "./tabsContent/MusicList";
+import NewReleases from "./tabsContent/NewReleases";
+import StoriesList from "./tabsContent/StoriesList";
+import Playlists from "./tabsContent/Playlists";
+
 import {
   faMusic,
   faIcons,
@@ -173,4 +178,31 @@ export const MOCK_PLAYLIST = [
   { id: 8, name: "Movie Scores", tracks: 39 },
   { id: 9, name: "Lava Lamp", tracks: 82 },
   { id: 10, name: "Nature Sounds", tracks: 66 },
+];
+
+export const selectedContent = [
+  {
+    id: 1,
+    title: "Music",
+    val: "music",
+    component: MusicList,
+  },
+  {
+    id: 2,
+    title: "Stories",
+    val: "stories",
+    component: StoriesList,
+  },
+  {
+    id: 3,
+    title: "Playlist",
+    val: "playlists",
+    component: Playlists,
+  },
+  {
+    id: 4,
+    title: "New Releases",
+    val: "releases",
+    component: NewReleases,
+  },
 ];
