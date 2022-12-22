@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import TabContext from "../../TabContext";
-import { selectedContent } from "../mock-data";
+import { selectedContent } from "../MockData";
 
 const TabLinks = () => {
   const ctx = useContext(TabContext);

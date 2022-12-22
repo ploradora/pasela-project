@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { MOCK_CARD } from "../mock-data";
+import { MOCK_CARD } from "../MockData";
 
 const Cards = () => {
   return (
