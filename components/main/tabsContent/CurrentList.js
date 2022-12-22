@@ -25,9 +25,10 @@ const CurrentList = () => {
           {ctx.currentTab === ctx.storiesTab && ctx.storiesComponent}
         </div> */}
         {selectedContent.map((component) => {
+          console.log(component.mock)
           if (ctx.currentTab === component.val) {
             const Component = component.component;
-            return <Component list={component.mock} currentTab={component.val} key={component.id} />;
+            return <Component list={component.mock} key={component.id} />;
           }
         })}
       </div>

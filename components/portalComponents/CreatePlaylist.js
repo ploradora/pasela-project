@@ -25,6 +25,7 @@ const CreatePlaylist = (props) => {
 
     MOCK_PLAYLIST.push(newPlaylist);
     ctx.setModalState(false);
+    console.log(newPlaylist)
   };
 
   const inputPlaylist = (e) => {
