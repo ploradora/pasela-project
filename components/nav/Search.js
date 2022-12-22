@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useState, useContext } from "react";
-import TabContext from "../tab-context";
+import TabContext from "../TabContext";
 
 const Search = (props) => {
   const ctx = useContext(TabContext);

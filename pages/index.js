@@ -1,4 +1,4 @@
-import TabContext from "../components/tab-context";
+import TabContext from "../components/TabContext";
 import Nav from "../components/nav/Nav";
 import SideLinks from "../components/SideLinks";
 import MainContent from "../components/main/MainContent";

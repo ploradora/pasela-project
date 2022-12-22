@@ -1,8 +1,7 @@
-import { useState } from "react";
 import ReactDOM from "react-dom";
-import { MOCK_PLAYLIST } from "../main/MockData";
-import TabContext from "../tab-context";
-import { useContext } from "react";
+import TabContext from "../TabContext";
+import { useState, useContext } from "react";
+import { MOCK_PLAYLIST } from "../Main/MockData";
 
 const CreatePlaylist = (props) => {
   const ctx = useContext(TabContext);
@@ -25,7 +24,7 @@ const CreatePlaylist = (props) => {
     };
 
     playlists.push(newPlaylist);
-    ctx.setModalState(false)
+    ctx.setModalState(false);
   };
 
   const inputPlaylist = (e) => {
