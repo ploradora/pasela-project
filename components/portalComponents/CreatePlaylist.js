@@ -2,10 +2,7 @@ import ReactDOM from "react-dom";
 import TabContext from "../TabContext";
 import { useState, useContext } from "react";
 
-import { MOCK_PLAYLIST } from "../Main/MockData";
-
-
-const CreatePlaylist = (props) => {
+const CreatePlaylist = () => {
   const ctx = useContext(TabContext);
   const [query, setQuery] = useState("");
   const [inputEmpty, setInputEmpty] = useState(false);
@@ -23,9 +20,14 @@ const CreatePlaylist = (props) => {
       tracks: 0,
     };
 
-    MOCK_PLAYLIST.push(newPlaylist);
+    ctx.selectContent.map((content) => {
+      if (content.val === "playlists") {
+        return content.mock.push(newPlaylist)
+      }
+    });
+
+    ctx.setCurrentTab("playlists");
     ctx.setModalState(false);
-    console.log(newPlaylist)
   };
 
   const inputPlaylist = (e) => {

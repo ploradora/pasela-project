@@ -1,7 +1,6 @@
 import TabLinks from "./TabLinks";
 import TabContext from "../../TabContext";
 import { useContext } from "react";
-import { selectedContent } from "../MockData";
 
 const CurrentList = () => {
   const ctx = useContext(TabContext);
@@ -24,8 +23,7 @@ const CurrentList = () => {
           {ctx.currentTab === ctx.playlistsTab && ctx.playlistsComponent}
           {ctx.currentTab === ctx.storiesTab && ctx.storiesComponent}
         </div> */}
-        {selectedContent.map((component) => {
-          console.log(component.mock)
+        {ctx.selectContent.map((component) => {
           if (ctx.currentTab === component.val) {
             const Component = component.component;
             return <Component list={component.mock} key={component.id} />;

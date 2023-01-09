@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import TabContext from "../../TabContext";
-import { selectedContent } from "../MockData";
 
 const TabLinks = () => {
   const ctx = useContext(TabContext);
@@ -15,7 +14,7 @@ const TabLinks = () => {
   return (
     <div>
       <div className="w-fit flex items-center justify-between">
-        {selectedContent.map((btn) => (
+        {ctx.selectContent.map((btn) => (
           <button
             key={btn.id}
             onClick={() => ctx.setCurrentTab(btn.val)}

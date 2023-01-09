@@ -4,6 +4,7 @@ import SideLinks from "../components/SideLinks";
 import MainContent from "../components/main/MainContent";
 import { useState } from "react";
 import { MOCK_MUSIC } from "../components/Main/MockData";
+import { selectedContent } from "../components/Main/MockData";
 // import MusicList from "../components/main/tabsContent/MusicList";
 // import StoriesList from "../components/main/tabsContent/StoriesList";
 // import Playlists from "../components/main/tabsContent/Playlists";
@@ -14,6 +15,7 @@ export default function Home() {
   const [currentListData, setCurrentListData] = useState(MOCK_MUSIC);
   const [filterQuery, setFilterQuery] = useState("");
   const [modalState, setModalState] = useState(false);
+  const [selectContent, setSelectContent] = useState(selectedContent);
   // const musicComponent = <MusicList />;
   // const storiesComponent = <StoriesList />;
   // const playlistsComponent = <Playlists />;
@@ -30,6 +32,8 @@ export default function Home() {
         setFilterQuery,
         modalState,
         setModalState,
+        selectContent,
+        setSelectContent,
         // musicComponent,
         // storiesComponent,
         // releasesComponent,

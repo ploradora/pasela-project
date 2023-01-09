@@ -1,7 +1,6 @@
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 import CreatePlaylist from "../portalComponents/CreatePlaylist";
 import OverlayPlaylist from "../portalComponents/OverlayPlaylist";
 import TabContext from "../TabContext";
