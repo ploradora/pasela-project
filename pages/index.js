@@ -5,10 +5,6 @@ import MainContent from "../components/main/MainContent";
 import { useState } from "react";
 import { MOCK_MUSIC } from "../components/Main/MockData";
 import { selectedContent } from "../components/Main/MockData";
-// import MusicList from "../components/main/tabsContent/MusicList";
-// import StoriesList from "../components/main/tabsContent/StoriesList";
-// import Playlists from "../components/main/tabsContent/Playlists";
-// import NewReleases from "../components/main/tabsContent/NewReleases";
 
 export default function Home() {
   const [currentTab, setCurrentTab] = useState("music");
@@ -16,10 +12,6 @@ export default function Home() {
   const [filterQuery, setFilterQuery] = useState("");
   const [modalState, setModalState] = useState(false);
   const [selectContent, setSelectContent] = useState(selectedContent);
-  // const musicComponent = <MusicList />;
-  // const storiesComponent = <StoriesList />;
-  // const playlistsComponent = <Playlists />;
-  // const releasesComponent = <NewReleases />;
 
   return (
     <TabContext.Provider
@@ -33,11 +25,7 @@ export default function Home() {
         modalState,
         setModalState,
         selectContent,
-        setSelectContent,
-        // musicComponent,
-        // storiesComponent,
-        // releasesComponent,
-        // playlistsComponent,
+        setSelectContent
       }}
     >
       <section className="flex items-start">
