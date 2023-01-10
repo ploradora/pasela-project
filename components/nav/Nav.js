@@ -2,7 +2,6 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CreatePlaylist from "../portalComponents/CreatePlaylist";
-import OverlayPlaylist from "../portalComponents/OverlayPlaylist";
 import TabContext from "../TabContext";
 import { useContext } from "react";
 
@@ -37,7 +36,6 @@ const Nav = (props) => {
           <span className="font-bold">Create Playlist</span>
         </button>
         {ctx.modalState && <CreatePlaylist />}
-        {ctx.modalState && <OverlayPlaylist />}
       </nav>
     </>
   );
