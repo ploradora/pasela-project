@@ -20,11 +20,7 @@ const CreatePlaylist = () => {
       tracks: 0,
     };
 
-    ctx.selectContent.map((content) => {
-      if (content.val === "playlists") {
-        return content.mock.push(newPlaylist);
-      }
-    });
+    ctx.addNewPlaylist(newPlaylist);
 
     ctx.setCurrentTab("playlists");
     ctx.setModalState(false);

@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 const CurrentList = () => {
   const ctx = useContext(TabContext);
-
+  // console.log(ctx.selectContent, 'current list');
   return (
     <div className="overflow-hidden">
       <div>
@@ -23,6 +23,7 @@ const CurrentList = () => {
           {ctx.currentTab === ctx.playlistsTab && ctx.playlistsComponent}
           {ctx.currentTab === ctx.storiesTab && ctx.storiesComponent}
         </div> */}
+
         {ctx.selectContent.map((component) => {
           if (ctx.currentTab === component.val) {
             const Component = component.component;
