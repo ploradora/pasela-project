@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CardItem = ({id, icon, title, val, color1, color2}) => {
+const CardItem = ({ icon, title, val, color1, color2}) => {
   return (
     <div
-      key={id}
       style={{
         background: `linear-gradient(200deg, ${color1}, ${color2})`,
       }}

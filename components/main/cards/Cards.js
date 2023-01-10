@@ -1,6 +1,6 @@
 import CardItem from "./CardItem";
 
-const Cards = ({cards}) => {
+const Cards = ({ cards }) => {
   return (
     <div className="ml-4">
       {cards.map((card) => (
@@ -18,4 +18,3 @@ const Cards = ({cards}) => {
 };
 
 export default Cards;
-
