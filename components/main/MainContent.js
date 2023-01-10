@@ -1,5 +1,5 @@
-import Cards from "./cards/Cards";
-import CurrentList from "./tabsContent/CurrentList";
+import Cards from "./Cards/Cards";
+import CurrentList from "./TabsContent/CurrentList";
 import { useContext } from "react";
 import TabContext from "../TabContext";
 

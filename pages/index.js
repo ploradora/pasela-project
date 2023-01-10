@@ -1,7 +1,7 @@
 import TabContext from "../components/TabContext";
-import Nav from "../components/nav/Nav";
+import Nav from "../components/Nav/Nav";
 import SideLinks from "../components/SideLinks";
-import MainContent from "../components/main/MainContent";
+import MainContent from "../components/Main/MainContent";
 import { useState } from "react";
 import { MOCK_CARD, MOCK_MUSIC } from "../components/Main/MockData";
 import { selectedContent } from "../components/Main/MockData";

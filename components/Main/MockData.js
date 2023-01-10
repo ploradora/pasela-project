@@ -1,7 +1,7 @@
-import MusicList from "./tabsContent/MusicList";
-import NewReleases from "./tabsContent/NewReleases";
-import StoriesList from "./tabsContent/StoriesList";
-import Playlists from "./tabsContent/Playlists";
+import MusicList from "./TabsContent/MusicList";
+import NewReleases from "./TabsContent/NewReleases";
+import StoriesList from "./TabsContent/StoriesList";
+import Playlists from "./TabsContent/Playlists";
 
 import {
   faMusic,
