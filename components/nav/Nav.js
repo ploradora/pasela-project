@@ -7,7 +7,7 @@ import { useContext } from "react";
 
 import Search from "./Search";
 
-const Nav = (props) => {
+const Nav = () => {
   const ctx = useContext(TabContext);
 
   return (

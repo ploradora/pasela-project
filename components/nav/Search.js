@@ -3,7 +3,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useState, useContext } from "react";
 import TabContext from "../TabContext";
 
-const Search = (props) => {
+const Search = () => {
   const ctx = useContext(TabContext);
   const [focused, setFocused] = useState(false);
   const [query, setQuery] = useState("");
@@ -12,15 +12,6 @@ const Search = (props) => {
     ctx.setFilterQuery(e.target.value);
     setQuery(e.target.value);
   };
-
-  // if(ctx.currentTab === 'music') {
-  //   ctx.setFilterQuery(query);
-
-  // }
-  // if(ctx.currentTab === 'playlists') {
-  //   ctx.setFilterQuery(query);
-
-  // }
 
   return (
     <div className="relative">
