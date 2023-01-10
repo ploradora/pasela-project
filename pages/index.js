@@ -3,7 +3,7 @@ import Nav from "../components/nav/Nav";
 import SideLinks from "../components/SideLinks";
 import MainContent from "../components/main/MainContent";
 import { useState } from "react";
-import { MOCK_MUSIC } from "../components/Main/MockData";
+import { MOCK_CARD, MOCK_MUSIC } from "../components/Main/MockData";
 import { selectedContent } from "../components/Main/MockData";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
   const [filterQuery, setFilterQuery] = useState("");
   const [modalState, setModalState] = useState(false);
   const [selectContent, setSelectContent] = useState(selectedContent);
-
+  const cardData = MOCK_CARD;
   const addNewPlaylist = (newPlaylist) => {
     const clonedSelectContent = [...selectContent];
 
@@ -38,6 +38,7 @@ export default function Home() {
         setModalState,
         selectContent,
         setSelectContent,
+        cardData,
         addNewPlaylist,
       }}
     >
