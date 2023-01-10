@@ -20,9 +20,9 @@ const CreatePlaylist = () => {
       tracks: 0,
     };
 
-    ctx.selectContent.forEach((content) => {
+    ctx.selectContent.map((content) => {
       if (content.val === "playlists") {
-        return content.mock.push(newPlaylist)
+        return content.mock.push(newPlaylist);
       }
     });
 
