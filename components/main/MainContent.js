@@ -11,7 +11,7 @@ const MainContent = () => {
       <div className="w-full">
         <CurrentList />
       </div>
-      <Cards cards={ctx.cardData} />
+      <Cards cards={ctx.MOCK_CARD} />
     </div>
   );
 };
