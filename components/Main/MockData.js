@@ -1,7 +1,7 @@
 import MusicList from "./links/Music/Music";
 import NewReleases from "./links/NewReleases/NewReleases";
 import StoriesList from "./links/Stories/Stories";
-import Playlists from "./links/Playlist/Playlist";
+import Playlists from "./links/Playlists/Playlists";
 
 import {
   faMusic,

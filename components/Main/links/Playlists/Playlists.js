@@ -1,5 +1,5 @@
 import OverflowScrollStyling from "../../OverflowScrollStyling";
-import PlaylistList from "./PlaylistList";
+import PlaylistList from "./PlaylistsList";
 
 const Playlist = ({ list }) => {
   return (
