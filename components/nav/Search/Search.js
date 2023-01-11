@@ -1,7 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useState, useContext } from "react";
-import TabContext from "../TabContext";
+import TabContext from "../../TabContext";
+
+import SearchInput from "./SearchInput";
 
 const Search = () => {
   const ctx = useContext(TabContext);
@@ -21,7 +23,7 @@ const Search = () => {
           className="absolute top-1/2 -translate-y-1/2 left-4 text-xs text-grey-input"
         />
       )}
-      <input
+      <SearchInput
         value={query}
         onChange={inputFilter}
         onFocus={() => {

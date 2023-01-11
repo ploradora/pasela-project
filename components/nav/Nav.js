@@ -5,7 +5,7 @@ import CreatePlaylist from "../PortalComponents/CreatePlaylist";
 import TabContext from "../TabContext";
 import { useContext } from "react";
 
-import Search from "./Search";
+import Search from "./Search/Search";
 
 const Nav = () => {
   const ctx = useContext(TabContext);

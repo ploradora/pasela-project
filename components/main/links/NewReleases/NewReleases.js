@@ -1,4 +1,4 @@
-import OverflowScrollStyling from "../OverflowScrollStyling";
+import OverflowScrollStyling from "../../OverflowScrollStyling";
 
 const NewReleases = () => {
   return (
