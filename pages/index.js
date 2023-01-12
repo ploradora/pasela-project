@@ -38,8 +38,8 @@ export default function Home() {
         setModalState,
         selectContent,
         setSelectContent,
-        MOCK_CARD,
         addNewPlaylist,
+        cardData: MOCK_CARD, 
       }}
     >
       <section className="flex items-start">
