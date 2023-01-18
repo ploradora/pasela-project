@@ -3,8 +3,8 @@ import Nav from "../components/nav/Nav";
 import SideLinks from "../components/SideLinks";
 import MainContent from "../components/main/MainContent";
 import { useState } from "react";
-import { MOCK_CARD, MOCK_MUSIC } from "../components/main/MockData";
-import { selectedContent } from "../components/main/MockData";
+import { MOCK_CARD, MOCK_MUSIC } from "../components/Main/MockData";
+import { selectedContent } from "../components/Main/MockData";
 
 export default function Home() {
   const [currentTab, setCurrentTab] = useState("music");
@@ -12,7 +12,7 @@ export default function Home() {
   const [filterQuery, setFilterQuery] = useState("");
   const [modalState, setModalState] = useState(false);
   const [selectContent, setSelectContent] = useState(selectedContent);
-  
+
   const addNewPlaylist = (newPlaylist) => {
     const clonedSelectContent = [...selectContent];
 
@@ -39,7 +39,7 @@ export default function Home() {
         selectContent,
         setSelectContent,
         addNewPlaylist,
-        cardData: MOCK_CARD, 
+        cardData: MOCK_CARD,
       }}
     >
       <section className="flex items-start">

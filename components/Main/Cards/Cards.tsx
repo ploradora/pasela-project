@@ -1,6 +1,8 @@
+import React from "react";
 import CardItem from "./CardItem";
+import { CardsListProps } from "../../Context/Interfaces";
 
-const Cards = ({ cards }) => {
+const Cards: React.FC = ({ cards }: CardsListProps) => {
   return (
     <div className="ml-4">
       {cards.map((card) => (

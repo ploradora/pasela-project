@@ -1,7 +1,9 @@
+import React from "react";
 import OverflowScrollStyling from "../../OverflowScrollStyling";
 import PlaylistList from "./PlaylistsList";
+import { PlaylistsProps } from "../../../Context/Interfaces";
 
-const Playlist = ({ list }) => {
+const Playlist: React.FC = ({ list }: PlaylistsProps) => {
   return (
     <OverflowScrollStyling>
       <div className="grid grid-card gap-2 w-full h-full">

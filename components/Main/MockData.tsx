@@ -1,8 +1,8 @@
-import MusicList from "./links/Music/Music";
+import MusicList from "./links/Music/MusicList";
 import NewReleases from "./links/NewReleases/NewReleases";
 import StoriesList from "./links/Stories/Stories";
 import Playlists from "./links/Playlists/Playlists";
-
+import { SelectedConted, Music, Card, Playlist } from "../Context/Interfaces";
 import {
   faMusic,
   faIcons,
@@ -10,7 +10,7 @@ import {
   faRadio,
 } from "@fortawesome/free-solid-svg-icons";
 
-export const MOCK_MUSIC = [
+export const MOCK_MUSIC: Music[] = [
   {
     id: "1",
     title: "Any Other Name",
@@ -132,7 +132,7 @@ export const MOCK_MUSIC = [
   },
 ];
 
-export const MOCK_CARD = [
+export const MOCK_CARD: Card[] = [
   {
     id: 4,
     icon: faMusic,
@@ -167,7 +167,7 @@ export const MOCK_CARD = [
   },
 ];
 
-export const MOCK_PLAYLIST = [
+export const MOCK_PLAYLIST: Playlist[] = [
   { id: 1, name: "Summer Vibez", tracks: 51 },
   { id: 2, name: "Cozy Winter", tracks: 192 },
   { id: 3, name: "Shake It", tracks: 47 },
@@ -180,7 +180,7 @@ export const MOCK_PLAYLIST = [
   { id: 10, name: "Nature Sounds", tracks: 66 },
 ];
 
-export const selectedContent = [
+export const selectedContent: SelectedConted[] = [
   {
     id: 1,
     title: "Music",

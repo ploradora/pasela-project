@@ -1,6 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { Cards } from "../../Context/Interfaces";
 
-const CardItem = ({ icon, title, val, color1, color2}) => {
+const CardItem: React.FC = ({
+  icon,
+  title,
+  val,
+  color1,
+  color2,
+}: Cards) => {
+
   return (
     <div
       style={{

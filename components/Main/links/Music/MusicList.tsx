@@ -1,8 +1,9 @@
 import TabContext from "../../../TabContext";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import MusicItem from "./MusicItem";
+import { MusicListProps } from "../../../Context/Interfaces";
 
-const MusicList = ({ list }) => {
+const MusicList: React.FC = ({ list }: MusicListProps) => {
   const ctx = useContext(TabContext);
 
   return (
