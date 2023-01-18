@@ -1,0 +1,36 @@
+// 1 - create an empty tsconfig.json file touch tsconfig.json
+// 2 - npm i -D typescript @types/react
+// 3 - npm run dev => next will automatically populate the file for you
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/Main/MainContent.tsx",
+    "components/nav/Search/Search.js",
+    "components/nav/Search/SearchInput.js",
+    "pages/api/hello.js",
+    "components/nav/Nav.tsx",
+    "components/Main/MockData.ts",
+    "components/TabContext.tsx",
+    "components/SideLinks.js"
+  ],
+  "exclude": ["node_modules"]
+}

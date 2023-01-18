@@ -1,10 +1,7 @@
-import TabContext from "../../../TabContext";
-import { useContext } from "react";
 import OverflowScrollStyling from "../../OverflowScrollStyling";
 import MusicList from "./MusicList";
 
 const Music = ({ list }) => {
-  const ctx = useContext(TabContext);
 
   return (
     <div>

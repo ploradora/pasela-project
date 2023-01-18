@@ -1,9 +1,21 @@
+import React from "react";
 import CardItem from "./CardItem";
 
-const Cards = ({ cards }) => {
+type CardsProps = {
+  cards: {
+    id: number;
+    icon: any;
+    title: string;
+    val: string;
+    color1: string;
+    color2: string;
+  }[];
+};
+
+const Cards = (props: CardsProps) => {
   return (
     <div className="ml-4">
-      {cards.map((card) => (
+      {props.cards.map((card) => (
         <CardItem
           key={card.id}
           icon={card.icon}

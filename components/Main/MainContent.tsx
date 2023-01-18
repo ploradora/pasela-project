@@ -1,7 +1,9 @@
 import Cards from "./Cards/Cards";
 import CurrentList from "./links/MainContent/MainContentList";
 import { useContext } from "react";
-import TabContext from "../TabContext";
+import { TabContextType } from "../Context/TabContext";
+import { MockCard } from "../Context/ContextTypes.types";
+
 
 const MainContent = () => {
   const ctx = useContext(TabContext);
