@@ -1,6 +1,6 @@
 import OverflowScrollStyling from "../../OverflowScrollStyling";
 
-const StoriesList = () => {
+const StoriesList: React.FC  = () => {
   return (
     <OverflowScrollStyling>
       <h1>Stories List</h1>

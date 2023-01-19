@@ -26,13 +26,13 @@ export type Music = {
   time: string;
   artist: string;
   link: string;
-}
+};
 
 export type Playlist = {
   id: number;
   name: string;
   tracks: number;
-}
+};
 
 export type Cards = {
   id?: number;
@@ -41,7 +41,7 @@ export type Cards = {
   val: string;
   color1: string;
   color2: string;
-}
+};
 
 export type SelectedConted = {
   id: number;
@@ -49,7 +49,7 @@ export type SelectedConted = {
   val: string;
   component: React.FC;
   mock?: Music[] | Playlist[];
-}
+};
 
 export type StateTypes = {
   currentTab: string;
@@ -65,3 +65,17 @@ export type StateTypes = {
   addNewPlaylist: (playlist: object) => void;
   cardData: Cards[];
 };
+
+export type SearchTypes = {
+  value: string;
+  onChange: (input: string) => void;
+  onFocus: (focus: boolean) => void;
+  onBlur: () => void;
+  type: string;
+  className: string;
+};
+
+export type OverflowScrollStylingTypes = {
+  stylingOnMusicTab: string,
+  children: React.ReactNode,
+}

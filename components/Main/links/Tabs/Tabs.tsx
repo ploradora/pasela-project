@@ -1,6 +1,6 @@
 import TabButtons from "./TabButtons";
 
-const TabLinks = () => {
+const TabLinks: React.FC = () => {
   return (
     <div>
       <div className="w-fit flex items-center justify-between">

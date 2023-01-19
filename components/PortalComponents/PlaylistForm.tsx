@@ -1,12 +1,12 @@
-import TabContext from "../TabContext";
 import { useState, useContext } from "react";
+import { Context } from "../Context/Context";
 
 const PlaylistForm = () => {
-  const ctx = useContext(TabContext);
+  const { addNewPlaylist, setCurrentTab, setModalState } = useContext(Context);
   const [query, setQuery] = useState("");
   const [inputEmpty, setInputEmpty] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     if (query === "" || query === " ") {
       setInputEmpty(true);
@@ -19,12 +19,12 @@ const PlaylistForm = () => {
       tracks: 0,
     };
 
-    ctx.addNewPlaylist(newPlaylist);
-    ctx.setCurrentTab("playlists");
-    ctx.setModalState(false);
+    addNewPlaylist(newPlaylist);
+    setCurrentTab("playlists");
+    setModalState(false);
   };
 
-  const inputPlaylist = (e) => {
+  const inputPlaylist = (e: any) => {
     const value = e.target.value;
     setQuery(value);
     if (value !== "" || value !== " ") {

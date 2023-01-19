@@ -1,17 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useState, useContext } from "react";
-import TabContext from "../../TabContext";
-
 import SearchInput from "./SearchInput";
+import { Context } from "../../Context/Context";
 
-const Search = () => {
-  const ctx = useContext(TabContext);
+const Search: React.FC = () => {
+  const { setFilterQuery } = useContext(Context);
+
   const [focused, setFocused] = useState(false);
   const [query, setQuery] = useState("");
 
-  const inputFilter = (e) => {
-    ctx.setFilterQuery(e.target.value);
+  const inputFilter = (e: any) => {
+    setFilterQuery(e.target.value);
     setQuery(e.target.value);
   };
 
@@ -31,7 +31,7 @@ const Search = () => {
         }}
         onBlur={() => {
           setFocused(false);
-          ctx.setFilterQuery("");
+          setFilterQuery("");
           setQuery("");
         }}
         type="text"

@@ -2,13 +2,13 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CreatePlaylist from "../PortalComponents/CreatePlaylist";
-import TabContext from "../TabContext";
 import { useContext } from "react";
 
 import Search from "./Search/Search";
+import { Context } from "../Context/Context";
 
-const Nav = () => {
-  const ctx = useContext(TabContext);
+const Nav: React.FC = () => {
+  const { setModalState, modalState } = useContext(Context);
 
   return (
     <>
@@ -29,13 +29,13 @@ const Nav = () => {
           <Search />
         </div>
         <button
-          onClick={() => ctx.setModalState(true)}
+          onClick={() => setModalState(true)}
           className="bg-blue text-white pt-2 pb-2 pr-8 pl-6 rounded-lg shadow-md"
         >
           <FontAwesomeIcon icon={faPlus} className="pr-1.5 text-s" />
           <span className="font-bold">Create Playlist</span>
         </button>
-        {ctx.modalState && <CreatePlaylist />}
+        {modalState && <CreatePlaylist />}
       </nav>
     </>
   );

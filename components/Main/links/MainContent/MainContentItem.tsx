@@ -1,8 +1,7 @@
-import TabContext from "../../../TabContext";
 import { useContext } from "react";
 import { Context } from "../../../Context/Context";
 
-const MainContentItem = () => {
+const MainContentItem: React.FC  = () => {
   const {selectContent, currentTab} = useContext(Context)
 
   return (
