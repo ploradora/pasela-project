@@ -14,7 +14,7 @@ export interface MusicListProps {
 }
 
 export interface PlaylistsProps {
-  list: Playlists[];
+  list: Playlist[];
 }
 
 export interface Music {
@@ -25,7 +25,7 @@ export interface Music {
   link: string;
 }
 
-export interface Playlists {
+export interface Playlist {
   id: number;
   name: string;
   tracks: number;
@@ -62,5 +62,5 @@ export interface SelectedConted {
   title: string;
   val: string;
   component: React.FC;
-  mock?: Music[] | Playlists[];
+  mock?: Music[] | Playlist[];
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import { Playlists } from "../../../Context/Interfaces";
+import { Playlist } from "../../../Context/Interfaces";
 
-const PlaylistItem: React.FC = ({ name, tracks}: Playlists) => {
+const PlaylistItem: React.FC = ({ name, tracks}: Playlist) => {
   return (
     <div
       style={{

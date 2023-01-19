@@ -2,10 +2,12 @@ import TabContext from "../../../TabContext";
 import { useContext } from "react";
 import OverflowScrollStyling from "../../OverflowScrollStyling";
 import MusicList from "./MusicList";
+import React from "react";
+import { MusicListProps } from "../../../Context/Interfaces";
 
 const Music = ({ list }) => {
   const ctx = useContext(TabContext);
-
+  console.log(list);
   return (
     <div>
       <div className="pr-2">
