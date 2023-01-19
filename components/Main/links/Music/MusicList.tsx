@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import MusicItem from "./MusicItem";
 import { MusicListProps } from "../../../Context/Interfaces";
 
-const MusicList: React.FC = ({ list }: MusicListProps) => {
+const MusicList: React.FC<MusicListProps> = ({ list }) => {
   const ctx = useContext(TabContext);
 
   return (

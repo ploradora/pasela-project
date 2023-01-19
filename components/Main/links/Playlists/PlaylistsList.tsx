@@ -13,7 +13,7 @@ const PlaylistList: React.FC<PlaylistsProps> = ({ list }) => {
           playlist.name.toLowerCase().includes(ctx.filterQuery.toLowerCase())
         )
         .map((playlist) => (
-          <PlaylistItem key={playlist.id} playlist={playlist} />
+          <PlaylistItem key={playlist.id} list={playlist} />
         ))}
     </>
   );

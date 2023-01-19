@@ -1,13 +1,14 @@
 import TabContext from "../../../TabContext";
 import { useContext } from "react";
+import { Context } from "../../../Context/Context";
 
 const MainContentItem = () => {
-  const ctx = useContext(TabContext);
+  const {selectContent, currentTab} = useContext(Context)
 
   return (
     <>
-      {ctx.selectContent.map((component) => {
-        if (ctx.currentTab === component.val) {
+      {selectContent.map((component) => {
+        if (currentTab === component.val) {
           const Component = component.component;
           return <Component list={component.mock} key={component.id} />;
         }

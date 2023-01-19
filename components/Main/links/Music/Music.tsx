@@ -5,7 +5,7 @@ import MusicList from "./MusicList";
 import React from "react";
 import { MusicListProps } from "../../../Context/Interfaces";
 
-const Music = ({ list }) => {
+const Music: React.FC<MusicListProps> = ({ list }) => {
   const ctx = useContext(TabContext);
   console.log(list);
   return (

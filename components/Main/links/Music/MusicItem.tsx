@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Music } from "../../../Context/Interfaces";
 
-const MusicItem: React.FC<Music> = ({ title,  time, artist, link}: Music) => {
+const MusicItem: React.FC<Music> = ({ title,  time, artist, link}) => {
   return (
     <div className="flex items-center justify-between mb-2 text-dark last:mb-0">
       <a href={link} target="_blank" className="flex items-center">
