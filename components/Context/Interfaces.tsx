@@ -31,15 +31,6 @@ export interface Playlist {
   tracks: number;
 }
 
-export interface Card {
-  id: number;
-  icon: any;
-  title: string;
-  val: string;
-  color1: string;
-  color2: string;
-}
-
 export interface Cards {
   id?: number;
   icon: any;
@@ -48,14 +39,6 @@ export interface Cards {
   color1: string;
   color2: string;
 }
-
-// export interface CardItemProps {
-//   icon: any;
-//   title: string;
-//   val: string;
-//   color1: string;
-//   color2: string;
-// }
 
 export interface SelectedConted {
   id: number;
