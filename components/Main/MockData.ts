@@ -2,7 +2,7 @@ import MusicList from "./links/Music/MusicList";
 import NewReleases from "./links/NewReleases/NewReleases";
 import StoriesList from "./links/Stories/Stories";
 import Playlists from "./links/Playlists/Playlists";
-import { SelectedConted, Music, Card, Playlist } from "../Context/Interfaces";
+import { SelectedConted, Music, Cards, Playlist } from "../Context/Interfaces";
 import {
   faMusic,
   faIcons,
@@ -132,7 +132,7 @@ export const MOCK_MUSIC: Music[] = [
   },
 ];
 
-export const MOCK_CARD: Card[] = [
+export const MOCK_CARD: Cards[] = [
   {
     id: 4,
     icon: faMusic,

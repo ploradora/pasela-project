@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Main/links/Music/Music.tsx", "components/Main/OverflowScrollStyling.js"  ],
+, "components/Main/links/Music/Music.tsx", "components/Main/OverflowScrollStyling.tsx"  ],
   "exclude": [
     "node_modules"
   ]

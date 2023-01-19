@@ -2,7 +2,8 @@ import TabContext from "../../../TabContext";
 import { useContext } from "react";
 import PlaylistItem from "./PlaylistItem";
 import { PlaylistsProps } from "../../../Context/Interfaces";
-const PlaylistList: React.FC = ({ list }: PlaylistsProps) => {
+
+const PlaylistList: React.FC<PlaylistsProps> = ({ list }) => {
   const ctx = useContext(TabContext);
 
   return (
