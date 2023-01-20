@@ -1,14 +1,16 @@
 import { useContext } from "react";
 import { Context } from "../../../Context/Context";
 
-const TabList: React.FC  = () => {
-  const {selectContent, currentTab, setCurrentTab} = useContext(Context)
+const TabList: React.FC = () => {
+  const { selectContent, currentTab, setCurrentTab } = useContext(Context);
 
   return (
     <>
       {selectContent.map((btn) => {
         const isActiveClass =
-          btn.val === currentTab ? "after:translate-y-0 text-darker" : "";
+          btn.val === currentTab
+            ? "after:translate-y-0 text-dark bg-white text-black"
+            : "";
         return (
           <button
             key={btn.id}
