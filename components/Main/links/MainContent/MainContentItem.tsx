@@ -6,7 +6,7 @@ const MainContentItem: React.FC = () => {
 
   return (
     <>
-      {selectContent.map((component: any) => {
+      {selectContent.map((component) => {
         if (currentTab === component.val) {
           const Component = component.component;
           return <Component list={component.mock} key={component.id} />;

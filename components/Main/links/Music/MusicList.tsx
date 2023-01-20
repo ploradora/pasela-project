@@ -14,7 +14,6 @@ const MusicList: React.FC<MusicListProps> = ({ list }) => {
         )
         .map((song) => (
           <MusicItem
-            song={song}
             key={song.id}
             title={song.title}
             time={song.time}

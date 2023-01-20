@@ -16,7 +16,6 @@ const PlaylistList: React.FC<PlaylistsProps> = ({ list }) => {
             key={playlist.id}
             name={playlist.name}
             tracks={playlist.tracks}
-            list={playlist}
           />
         ))}
     </>

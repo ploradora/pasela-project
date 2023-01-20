@@ -1,7 +1,3 @@
-// import MusicList from "../Main/links/Music/MusicList";
-// import NewReleases from "../Main/links/NewReleases/NewReleases";
-// import StoriesList from "../Main/links/Stories/Stories";
-// import Playlists from "../Main/links/Playlists/Playlists";
 import React from "react";
 
 export interface CardsListProps {
@@ -21,7 +17,6 @@ export interface SelectedContedProps {
 }
 
 export type Music = {
-  song?: object;
   id?: string;
   title: string;
   time: string;
@@ -33,7 +28,6 @@ export type Playlist = {
   id?: number;
   name: string;
   tracks: number;
-  list?: object;
 };
 
 export type Cards = {
@@ -64,17 +58,10 @@ export type StateTypes = {
   setFilterQuery: (input: string) => void;
   setModalState: (type: boolean) => void;
   setSelectContent: (content: []) => void;
-  addNewPlaylist: (playlist: object) => void;
+  addNewPlaylist: (playlist: {
+    [key: string | number]: string | number;
+  }) => void;
   cardData: Cards[];
-};
-
-export type SearchTypes = {
-  value: any;
-  onChange: any;
-  onFocus: any;
-  onBlur: any;
-  type: string;
-  className: string;
 };
 
 export type OverflowScrollStylingTypes = {

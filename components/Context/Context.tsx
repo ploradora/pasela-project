@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 import { MOCK_MUSIC, MOCK_CARD, selectedContent } from "../Main/MockData";
-import { StateTypes } from "./Interfaces";
+import { Music, Playlist, StateTypes } from "./Interfaces";
 
 export const Context = createContext<StateTypes>({
   currentTab: "music",
@@ -30,7 +30,7 @@ export const ContextProvider: React.FC<ChildrenContextProvider> = ({
   const [modalState, setModalState] = useState(false);
   const [selectContent, setSelectContent] = useState(selectedContent);
 
-  const addNewPlaylist = (newPlaylist: any) => {
+  const addNewPlaylist = (newPlaylist: Music & Playlist) => {
     const clonedSelectContent = [...selectContent];
 
     const secondClone = clonedSelectContent.map((content) => {

@@ -23,7 +23,7 @@ const Music: React.FC<MusicListProps> = ({ list }) => {
       </div>
       <OverflowScrollStyling
         stylingOnMusicTab={
-          " bg-blue max-h-[calc(100vh_-_310.1px)] min-h-[calc(100vh_-_310.1px)]"
+          "max-h-[calc(100vh_-_310.1px)] min-h-[calc(100vh_-_310.1px)]"
         }
       >
         <div className="pr-3">

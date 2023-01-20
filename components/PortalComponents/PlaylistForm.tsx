@@ -6,7 +6,7 @@ const PlaylistForm = () => {
   const [query, setQuery] = useState("");
   const [inputEmpty, setInputEmpty] = useState(false);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query === "" || query === " ") {
       setInputEmpty(true);
@@ -24,10 +24,10 @@ const PlaylistForm = () => {
     setModalState(false);
   };
 
-  const inputPlaylist = (e: any) => {
-    const value = e.target.value;
+  const inputPlaylist = (e: React.FormEvent) => {
+    const value = (e.target as HTMLInputElement).value;
     setQuery(value);
-    if (value !== "" || value !== " ") {
+    if (value !== "") {
       setInputEmpty(false);
     } else {
       setInputEmpty(true);
