@@ -21,7 +21,8 @@ export interface SelectedContedProps {
 }
 
 export type Music = {
-  id: string;
+  song?: object;
+  id?: string;
   title: string;
   time: string;
   artist: string;
@@ -29,9 +30,10 @@ export type Music = {
 };
 
 export type Playlist = {
-  id: number;
+  id?: number;
   name: string;
   tracks: number;
+  list?: object;
 };
 
 export type Cards = {
@@ -67,15 +69,15 @@ export type StateTypes = {
 };
 
 export type SearchTypes = {
-  value: string;
-  onChange: (input: string) => void;
-  onFocus: (focus: boolean) => void;
-  onBlur: () => void;
+  value: any;
+  onChange: any;
+  onFocus: any;
+  onBlur: any;
   type: string;
   className: string;
 };
 
 export type OverflowScrollStylingTypes = {
-  stylingOnMusicTab: string,
-  children: React.ReactNode,
-}
+  stylingOnMusicTab?: string;
+  children: React.ReactNode;
+};

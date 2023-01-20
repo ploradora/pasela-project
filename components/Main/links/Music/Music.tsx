@@ -1,11 +1,9 @@
-import OverflowScrollStyling from "../../OverflowScrollStyling";
 import MusicList from "./MusicList";
 import React from "react";
 import { MusicListProps } from "../../../Context/Interfaces";
+import OverflowScrollStyling from "../../OverflowScrollStyling";
 
 const Music: React.FC<MusicListProps> = ({ list }) => {
-
-  console.log(list);
   return (
     <div>
       <div className="pr-2">
@@ -25,7 +23,7 @@ const Music: React.FC<MusicListProps> = ({ list }) => {
       </div>
       <OverflowScrollStyling
         stylingOnMusicTab={
-          "max-h-[calc(100vh_-_310.1px)] min-h-[calc(100vh_-_310.1px)]"
+          " bg-blue max-h-[calc(100vh_-_310.1px)] min-h-[calc(100vh_-_310.1px)]"
         }
       >
         <div className="pr-3">

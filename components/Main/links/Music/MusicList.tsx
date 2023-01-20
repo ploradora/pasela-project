@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
+import { Context } from "../../../Context/Context";
 import MusicItem from "./MusicItem";
 import { MusicListProps } from "../../../Context/Interfaces";
-import { Context } from "../../../Context/Context";
 
 const MusicList: React.FC<MusicListProps> = ({ list }) => {
   const { filterQuery } = useContext(Context);
@@ -9,11 +9,18 @@ const MusicList: React.FC<MusicListProps> = ({ list }) => {
   return (
     <>
       {list
-        .filter((song: {}) =>
+        .filter((song) =>
           song.title.toLowerCase().includes(filterQuery.toLowerCase())
         )
         .map((song) => (
-          <MusicItem song={song} key={song.id} />
+          <MusicItem
+            song={song}
+            key={song.id}
+            title={song.title}
+            time={song.time}
+            artist={song.artist}
+            link={song.link}
+          />
         ))}
     </>
   );

@@ -30,7 +30,7 @@ export const ContextProvider: React.FC<ChildrenContextProvider> = ({
   const [modalState, setModalState] = useState(false);
   const [selectContent, setSelectContent] = useState(selectedContent);
 
-  const addNewPlaylist = (newPlaylist: object) => {
+  const addNewPlaylist = (newPlaylist: any) => {
     const clonedSelectContent = [...selectContent];
 
     const secondClone = clonedSelectContent.map((content) => {
