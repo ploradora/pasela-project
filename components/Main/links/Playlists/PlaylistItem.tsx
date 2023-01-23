@@ -1,5 +1,5 @@
 import React from "react";
-import { Playlist } from "../../../Context/Interfaces";
+import { Playlist } from "./Playlistitem.type";
 
 const PlaylistItem: React.FC<Playlist> = ({ name, tracks }) => {
   return (

@@ -2,13 +2,14 @@ import MusicComponent from "./links/Music/Music";
 import NewReleases from "./links/NewReleases/NewReleases";
 import StoriesList from "./links/Stories/Stories";
 import Playlists from "./links/Playlists/Playlists";
-import { SelectedConted, Music, Cards, Playlist } from "../Context/Interfaces";
+import { SelectedConted, Music, Cards } from "../Context/Interfaces";
 import {
   faMusic,
   faIcons,
   faRecordVinyl,
   faRadio,
 } from "@fortawesome/free-solid-svg-icons";
+import { Playlist } from "./links/Playlists/Playlistitem.type";
 
 export const MOCK_MUSIC: Music[] = [
   {
@@ -208,3 +209,6 @@ export const selectedContent: SelectedConted[] = [
     component: NewReleases,
   },
 ];
+
+
+

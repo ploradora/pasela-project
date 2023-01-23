@@ -35,7 +35,7 @@ export const ContextProvider: React.FC<ChildrenContextProvider> = ({
 
     const secondClone = clonedSelectContent.map((content) => {
       if (content.val === "playlists") {
-        content.mock.push(newPlaylist);
+        content.mock.push(newPlaylist as any);
       }
       return content;
     });

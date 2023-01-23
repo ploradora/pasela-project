@@ -1,4 +1,5 @@
 import React from "react";
+import { Playlist } from "../Main/links/Playlists/Playlistitem.type";
 
 export interface CardsListProps {
   cards: Cards[];
@@ -17,21 +18,11 @@ export interface SelectedContedProps {
 }
 
 export type Music = {
-  id?: number;
-  title?: string;
-  time?: string;
-  artist?: string;
-  link?: string;
-};
-
-export type Playlist = {
-  id?: number;
-  name: string;
-  tracks: number;
-  time?: string;
-  title?: string;
-  artist?: string;
-  link?: string;
+  id: number;
+  title: string;
+  time: string;
+  artist: string;
+  link: string;
 };
 
 export type Cards = {
@@ -48,7 +39,8 @@ export type SelectedConted = {
   title: string;
   val: string;
   component: React.FC;
-  mock?: Playlist[] | Music[];
+  playlistMock?: Playlist[];
+  musicMock?: Music[]
 };
 
 export type StateTypes = {
