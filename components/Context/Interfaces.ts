@@ -17,17 +17,21 @@ export interface SelectedContedProps {
 }
 
 export type Music = {
-  id?: string;
-  title: string;
-  time: string;
-  artist: string;
-  link: string;
+  id?: number;
+  title?: string;
+  time?: string;
+  artist?: string;
+  link?: string;
 };
 
 export type Playlist = {
   id?: number;
   name: string;
   tracks: number;
+  time?: string;
+  title?: string;
+  artist?: string;
+  link?: string;
 };
 
 export type Cards = {
@@ -44,7 +48,7 @@ export type SelectedConted = {
   title: string;
   val: string;
   component: React.FC;
-  mock?: Playlist[];
+  mock?: Playlist[] | Music[];
 };
 
 export type StateTypes = {
@@ -58,9 +62,7 @@ export type StateTypes = {
   setFilterQuery: (input: string) => void;
   setModalState: (type: boolean) => void;
   setSelectContent: (content: []) => void;
-  addNewPlaylist: (playlist: {
-    [key: string | number]: string | number;
-  }) => void;
+  addNewPlaylist: (data: { [key: string | number]: string | number }) => void;
   cardData: Cards[];
 };
 

@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 import { MOCK_MUSIC, MOCK_CARD, selectedContent } from "../Main/MockData";
-import { Music, Playlist, StateTypes } from "./Interfaces";
+import { Playlist, StateTypes } from "./Interfaces";
 
 export const Context = createContext<StateTypes>({
   currentTab: "music",
@@ -17,7 +17,7 @@ export const Context = createContext<StateTypes>({
   cardData: MOCK_CARD,
 });
 
-export type ChildrenContextProvider = {
+type ChildrenContextProvider = {
   children: React.ReactNode;
 };
 
