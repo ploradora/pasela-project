@@ -2,7 +2,7 @@ import OverflowScrollStyling from "../../OverflowScrollStyling";
 
 const NewReleases: React.FC = () => {
   return (
-    <OverflowScrollStyling>
+    <OverflowScrollStyling >
       <h1>New Releases</h1>
     </OverflowScrollStyling>
   );

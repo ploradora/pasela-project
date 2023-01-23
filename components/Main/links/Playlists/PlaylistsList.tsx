@@ -13,6 +13,7 @@ const PlaylistList: React.FC<PlaylistsProps> = ({ list }) => {
         )
         .map((playlist) => (
           <PlaylistItem
+            id={playlist.id}
             key={playlist.id}
             name={playlist.name}
             tracks={playlist.tracks}

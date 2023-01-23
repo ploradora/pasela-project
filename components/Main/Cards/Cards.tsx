@@ -7,6 +7,7 @@ const Cards: React.FC<CardsListProps> = ({ cards }) => {
     <div className="ml-4">
       {cards.map((card) => (
         <CardItem
+          id={card.id}
           key={card.id}
           icon={card.icon}
           title={card.title}

@@ -17,25 +17,21 @@ export interface SelectedContedProps {
 }
 
 export type Music = {
-  id?: number;
-  title?: string;
-  time?: string;
-  artist?: string;
-  link?: string;
+  id: number;
+  title: string;
+  time: string;
+  artist: string;
+  link: string;
 };
 
 export type Playlist = {
-  id?: number;
+  id: number;
   name: string;
   tracks: number;
-  time?: string;
-  title?: string;
-  artist?: string;
-  link?: string;
 };
 
 export type Cards = {
-  id?: number;
+  id: number;
   icon: any;
   title: string;
   val: string;
@@ -48,7 +44,8 @@ export type SelectedConted = {
   title: string;
   val: string;
   component: React.FC;
-  mock?: Playlist[] | Music[];
+  mockPlaylist?: Playlist[];
+  mockMusic?: Music[];
 };
 
 export type StateTypes = {

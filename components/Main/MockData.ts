@@ -186,7 +186,8 @@ export const selectedContent: SelectedConted[] = [
     title: "Music",
     val: "music",
     component: MusicComponent,
-    mock: MOCK_MUSIC,
+    mockMusic: MOCK_MUSIC,
+    mockPlaylist: MOCK_PLAYLIST,
   },
   {
     id: 2,
@@ -199,7 +200,8 @@ export const selectedContent: SelectedConted[] = [
     title: "Playlist",
     val: "playlists",
     component: Playlists,
-    mock: MOCK_PLAYLIST,
+    mockMusic: MOCK_MUSIC,
+    mockPlaylist: MOCK_PLAYLIST,
   },
   {
     id: 4,

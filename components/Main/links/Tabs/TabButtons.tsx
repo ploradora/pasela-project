@@ -8,7 +8,7 @@ const TabList: React.FC = () => {
     <>
       {selectContent.map((btn) => {
         const activeButtonClass =
-          btn.val === currentTab ? "after:translate-y-0 text-darker" : "";
+          btn.val === currentTab ? "after:translate-y-0 text-black" : "";
         return (
           <button
             key={btn.id}
