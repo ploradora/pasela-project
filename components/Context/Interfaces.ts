@@ -44,6 +44,7 @@ export type SelectedConted = {
   title: string;
   val: string;
   component: React.FC;
+  mock?: undefined;
   mockPlaylist?: Playlist[];
   mockMusic?: Music[];
 };
