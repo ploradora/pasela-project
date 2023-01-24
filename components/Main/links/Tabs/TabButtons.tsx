@@ -13,7 +13,7 @@ const TabList: React.FC = () => {
           <button
             key={btn.id}
             onClick={() => setCurrentTab(btn.val)}
-            className={`overflow-hidden relative text-center text-l text-grey font-bold py-4 px-12 rounded-t-lg hover:text-dark after:absolute after:h-full after:w-full after:bg-white after:top-0 after:left-0 after:-z-10  hover:after:transition-all after:translate-y-full${activeButtonClass}`}
+            className={`overflow-hidden relative text-center text-l text-grey font-bold py-4 px-12 rounded-t-lg hover:text-black after:absolute after:h-full after:w-full after:bg-white after:top-0 after:left-0 after:-z-10  hover:after:transition-all after:translate-y-full${activeButtonClass}`}
           >
             {btn.title}
           </button>

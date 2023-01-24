@@ -10,8 +10,8 @@ const PlaylistItem: React.FC<Playlist> = ({ name, tracks }) => {
       className="p-2.5  w-full rounded-lg hover:drop-shadow-md cursor-pointer"
     >
       <div className="w-full h-32 bg-white rounded-lg mb-2 bg-transparent"></div>
-      <p className="text-dark font-bold -mb-1 ">{name}</p>
-      <p className="text-sm text-dark">{tracks} tracks</p>
+      <p className="text-black font-bold -mb-1 ">{name}</p>
+      <p className="text-sm text-black">{tracks} tracks</p>
     </div>
   );
 };

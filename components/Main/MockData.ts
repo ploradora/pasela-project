@@ -194,6 +194,7 @@ export const selectedContent: SelectedConted[] = [
     title: "Stories",
     val: "stories",
     component: StoriesList,
+    mock: undefined,
   },
   {
     id: 3,
@@ -208,5 +209,6 @@ export const selectedContent: SelectedConted[] = [
     title: "New Releases",
     val: "releases",
     component: NewReleases,
+    mock: undefined,
   },
 ];

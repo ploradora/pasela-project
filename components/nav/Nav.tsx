@@ -23,7 +23,7 @@ const Nav: React.FC = () => {
               Dashboard
             </span>
           </button>
-          <h1 className="mx-6 not-italic font-bold  text-3xl leading-10 text-dark">
+          <h1 className="mx-6 not-italic font-bold  text-3xl leading-10 text-black">
             Audio
           </h1>
           <Search />

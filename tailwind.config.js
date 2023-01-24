@@ -10,7 +10,6 @@ module.exports = {
       "blue-100": "#adbcc4",
       white: "white",
       darker: "#2e2e2e",
-      dark: "#3D3D3D",
       black: "#3D3D3D",
       grey: "#A3A3A3",
       red: "#ed3e32",

@@ -13,10 +13,10 @@ const CardItem: React.FC<Cards> = ({ icon, title, val, color1, color2 }) => {
         console.log(val);
       }}
     >
-      <FontAwesomeIcon icon={icon} className="text-2xl text-dark" />
+      <FontAwesomeIcon icon={icon} className="text-2xl text-black" />
       <div>
         <div className="text-l font-bold">{title}</div>
-        <p className="text-sm text-dark">23 Tracks</p>
+        <p className="text-sm text-black">23 Tracks</p>
       </div>
     </div>
   );

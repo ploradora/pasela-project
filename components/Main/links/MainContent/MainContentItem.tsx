@@ -19,6 +19,12 @@ const MainContentItem: React.FC = () => {
           if (component.val === "music") {
             return <Component list={component.mockMusic} key={component.id} />;
           }
+          if (component.val === "stories") {
+            return <Component list={component.mock} key={component.id} />;
+          }
+          if (component.val === "releases") {
+            return <Component list={component.mock} key={component.id} />;
+          }
         }
       })}
     </>

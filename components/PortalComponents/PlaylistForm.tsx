@@ -39,7 +39,7 @@ const PlaylistForm = () => {
       onSubmit={handleSubmit}
       className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-96 grid place-self-center rounded-lg p-3.5 bg-white z-50"
     >
-      <label className="text-center mb-12 font-bold text-dark text-lg">
+      <label className="text-center mb-12 font-bold text-black text-lg">
         Create a playlist
       </label>
       <div className="m-auto w-3/4 mb-8">
@@ -47,7 +47,7 @@ const PlaylistForm = () => {
           type="text"
           value={query}
           onChange={inputPlaylist}
-          className={`w-full mb-1 px-2 text-dark font-bold border-b-2 border-grey-200 focus:outline-none focus:border-b-2 focus:border-blue ${
+          className={`w-full mb-1 px-2 text-black font-bold border-b-2 border-grey-200 focus:outline-none focus:border-b-2 focus:border-blue ${
             inputEmpty ? "border-red focus:border-red" : ""
           }`}
         />
