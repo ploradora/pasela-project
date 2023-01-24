@@ -11,7 +11,7 @@ const CreatePlaylist = () => {
       <PlaylistForm />
       <div
         onClick={() => setModalState(false)}
-        className="absolute top-0 left-0 w-full h-full bg-black z-40 cursor-pointer bg-grey-100 backdrop-blur-sm"
+        className="absolute top-0 left-0 w-full h-full bg-dark z-40 cursor-pointer bg-grey-100 backdrop-blur-sm"
       ></div>
     </>,
     document.getElementById("modal")
